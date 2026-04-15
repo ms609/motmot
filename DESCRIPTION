@@ -10,6 +10,7 @@ Description: Functions for fitting models of trait evolution
 Authors@R: c(
     person(given = "Mark", family = "Puttick",
             role = c("aut", "cph"),
+            comment = c(ORCID = "0000-0002-1011-3442"),
             email = "marknputtick@gmail.com"),
     person(given = "Gavin", family = "Thomas",
             role = c("aut", "cph")),
