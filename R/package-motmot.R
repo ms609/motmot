@@ -26,8 +26,6 @@
 #'  _Methods in Ecology and Evolution_ 3, 145-151.
 #'  \doi{10.1111/j.2041-210X.2011.00132.x}
 #'
-## usethis namespace: start
 #' @importFrom Rcpp sourceCpp
 #' @useDynLib motmot, .registration=TRUE
-## usethis namespace: end
 "_PACKAGE"
