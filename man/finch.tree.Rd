@@ -4,7 +4,9 @@
 \name{finch.tree}
 \alias{finch.tree}
 \title{Finch tree}
-\format{An object of class \code{"phylo"}}
+\format{
+An object of class \code{"phylo"}
+}
 \usage{
 data(finches)
 }

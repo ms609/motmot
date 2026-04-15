@@ -247,17 +247,17 @@ birthdeath_motmot <- function(phy) {
     if (out$estimate[1] < 0) {
         out <- nlm(function(p) dev(0, p), 0.2, hessian = TRUE)
         para <- c(0, out$estimate)
-        inv.hessian <- try(solve(out$hessian))
-        se <- if (class(inv.hessian) == "try-error") 
-            NA
-        else sqrt(diag(inv.hessian))
+		inv.hessian <- try(solve(out$hessian))
+		se <- if (inherits(inv.hessian, "try-error")) 
+			NA
+		else sqrt(diag(inv.hessian))
         se <- c(0, se)
     } else {
         para <- out$estimate
-        inv.hessian <- try(solve(out$hessian))
-        se <- if (class(inv.hessian) == "try-error") 
-            c(NA, NA)
-        else sqrt(diag(inv.hessian))
+		inv.hessian <- try(solve(out$hessian))
+		se <- if (inherits(inv.hessian, "try-error")) 
+			c(NA, NA)
+		else sqrt(diag(inv.hessian))
     }
     Dev <- out$minimum
     foo <- function(which, s) {

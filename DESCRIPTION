@@ -1,22 +1,37 @@
 Package: motmot
-Type: Package
 Title: Models of Trait Macroevolution on Trees
-Version: 2.1.3
+Version: 2.1.4
 Depends: R (>= 2.10.0), ape (>= 3.0-7)
-Date: 2019-11-21
-Author: Mark Puttick [aut, cre, cph], Gavin Thomas [aut, cph], Rob Freckleton [aut, cph], Magnus Clarke [ctb], Travis Ingram [ctb], David Orme [ctb], Emmanuel Paradis [ctb]
-Maintainer: Mark Puttick <marknputtick@gmail.com>
 Description: Functions for fitting models of trait evolution
-        on phylogenies for continuous traits. The majority of functions
-        described in Thomas and Freckleton (2012) <doi:10.1111/j.2041-210X.2011.00132.x> 	and include functions that allow for tests of variation in the rates of trait evolution.
+        on phylogenies for continuous traits. The majority of functions are
+        described in Thomas and Freckleton (2012)
+        <doi:10.1111/j.2041-210X.2011.00132.x> and allow tests of variation 
+        in the rates of trait evolution.
+Authors@R: c(
+    person(given = "Mark", family = "Puttick",
+            role = c("aut", "cph"),
+            email = "marknputtick@gmail.com"),
+    person(given = "Gavin", family = "Thomas",
+            role = c("aut", "cph")),
+    person(given = "Rob", family = "Freckleton",
+            role = c("aut", "cph")),
+    person(given = "Magnus", family = "Clarke",
+            role = "ctb"),
+    person(given = "Travis", family = "Ingram",
+            role = "ctb"),
+    person(given = "David", family = "Orme",
+            role = "ctb"),
+    person(given = "Emmanuel", family = "Paradis",
+            role = "ctb"),
+    person("Martin R.", "Smith", role = c("ctb", "cre"),
+            email = "martin.smith@durham.ac.uk",
+            comment = c(ORCID = "0000-0001-5660-1727"))
+  )
 License: GPL (>= 2)
-Repository: github
 URL: https://puttickbiology.wordpress.com/motmot/
-RoxygenNote: 7.0.0
-LazyData: true
-Suggests: knitr, rmarkdown
-VignetteBuilder: knitr
 LinkingTo: Rcpp
 Imports: Rcpp, coda, ks, mvtnorm, caper, methods
+Suggests: knitr, rmarkdown
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
 Encoding: UTF-8
-SystemRequirements: C++11

@@ -4,7 +4,9 @@
 \name{anolis.data}
 \alias{anolis.data}
 \title{Anolis phenotype data}
-\format{An object of class \code{"data.frame"}.}
+\format{
+An object of class \code{"data.frame"}.
+}
 \usage{
 data(anolis.data)
 }

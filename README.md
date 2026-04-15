@@ -43,9 +43,9 @@ male.length &lt;- sortedData$trait</code></pre>
 <pre class="r"><code>traitData.plot(y = male.length, phy, lwd.traits = 2, col.label = &quot;#00008050&quot;,
     tck = -0.01, mgp = c(0, 0.2, 0), cex.axis = 0.5, show.tips = FALSE)</code></pre>
 <div class="figure">
-<img src="/vignettes/figures/plot1-1.png" alt="Figure 1. TraitData showing the realtive male snout-vent length at the tips" width="1000" />
+<img src="/vignettes/figures/plot1-1.png" alt="Figure 1. TraitData showing the relative male snout-vent length at the tips" width="1000" />
 <p class="caption">
-Figure 1. TraitData showing the realtive male snout-vent length at the tips
+Figure 1. TraitData showing the relative male snout-vent length at the tips
 </p>
 </div>
 <p>For the sake of brevity, in the following examples we fit the models to a subset of these data: including the clade from node 182 only using the <a href="https://CRAN.R-project.org/package=ape">APE</a> function <code>extract.clade</code>.</p>

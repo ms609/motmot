@@ -33,7 +33,7 @@
 
 summary.traitMedusa <- function (object, ..., cutoff=4, AICc=TRUE, lowerBound=1e-8, upperBound=200, print.warnings=FALSE) {
 	
-  if (class(object) != "traitMedusa")
+  if (!inherits(object, "traitMedusa"))
     stop("Please sapply output from transformPhylo.ML with model = 'tm1' or model = 'tm2'.")
   
   traitMedusaObject <- object

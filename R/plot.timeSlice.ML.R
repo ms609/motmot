@@ -39,7 +39,7 @@
 plot.timeSlice.ML <- function(x, ..., cutoff=4, AICc=TRUE, lowerBound=1e-8, upperBound=1000, 
   phylo.plot = TRUE, colour.ramp=c("blue", "red"), cex.plot=1, model.average = FALSE) {
   	
-  if (class(x) == "timeslice.ML")
+  if (!inherits(x, "timeslice.ML"))
 	  stop("Please sapply output from transformPhylo.ML with model = 'timeSlice'.")
   
   timeSliceObject <- x

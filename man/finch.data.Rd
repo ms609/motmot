@@ -4,7 +4,9 @@
 \name{finch.data}
 \alias{finch.data}
 \title{Finch phenotype data}
-\format{An object of class \code{"data.frame"}.}
+\format{
+An object of class \code{"data.frame"}.
+}
 \usage{
 data(finches)
 }

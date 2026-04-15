@@ -4,7 +4,7 @@ author: "Mark Puttick"
 date: "`r format(Sys.time(), '%d %B %Y')`"
 output: html_document
 vignette: >
-  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteIndexEntry{MOTMOT: Models Of Trait Macroevolution On Trees}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -64,7 +64,7 @@ male.length <- sortedData$trait
 
 Finally, we will 'prune' the species from the tree using `drop.tip` from [APE](https://CRAN.R-project.org/package=ape). We plot our tree and data using the MOTMOT `traitData.plot` function.
 
-```{r plot1, fig.cap = "Figure 1. TraitData showing the realtive male snout-vent length at the tips", echo = T, fig.height = 5, fig.width = 5, fig.path='figures/', dev='png', dpi=200}
+```{r plot1, fig.cap = "Figure 1. TraitData showing the relative male snout-vent length at the tips", echo = T, fig.height = 5, fig.width = 5, fig.path='figures/', dev='png', dpi=200}
 traitData.plot(y=male.length, phy, lwd.traits=2, col.label="#00008050", tck=-0.01, mgp=c(0,0.2,0), cex.axis=0.5, show.tips=FALSE)
 ```
 

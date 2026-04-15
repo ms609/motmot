@@ -12,23 +12,23 @@
 #' @param meserr Logical. Incorporate measurement error.
 #' @param file File string for output. Only used if \code{pretty=TRUE}.
 #' @return If \code{pretty=FALSE}, returns a list containing:
-#' \itemize{
-#' \item {MLRate} Maximum likelihood estimates of the rate parameters
-#' \item {Lambda}  Maximum likelihood estimate of lambda
-#' \item {LCI} Approximate lower confidence intervals for rate
-#' \item {UCI} Approximate upper confidence intervals for rate parameters
-#' \item {means} Means for each category
-#' \item {nParam} Number of parameters in the model (how many means and rate categories)
-#' \item {Max.lik} Maximum (log) likeihood
-#' \item {AIC} for maximum likelihood model
-#' \item {AICc} for maximum likelihood model
-#' \item {LambdaSingle} Maximum likelihood estimate of lambda for the single rate model
-#' \item {Lik1}  Likelihood of the equivalent single rate model
-#' \item {Likelihood} ratio statistic of "Max.lik" vs "Lik1"
-#' \item {P}  P values for the LR statistic
-#' \item {df} Degrees of freedom for the LR statistic
-#' \item {AIC.rate1} AIC for single rate model
-#' \item {AICc.rate1} AICc for single rate model
+#' \describe{
+#' \item{MLRate}{Maximum likelihood estimates of the rate parameters}
+#' \item{Lambda}{Maximum likelihood estimate of lambda}
+#' \item{LCI}{Approximate lower confidence intervals for rate}
+#' \item{UCI}{Approximate upper confidence intervals for rate parameters}
+#' \item{means}{Means for each category}
+#' \item{nParam}{Number of parameters in the model (how many means and rate categories)}
+#' \item{Max.lik}{Maximum (log) likeihood}
+#' \item{AIC}{for maximum likelihood model}
+#' \item{AICc}{for maximum likelihood model}
+#' \item{LambdaSingle}{Maximum likelihood estimate of lambda for the single rate model}
+#' \item{Lik1}{Likelihood of the equivalent single rate model}
+#' \item{Likelihood}{ratio statistic of "Max.lik" vs "Lik1"}
+#' \item{P}{P values for the LR statistic}
+#' \item{df}{Degrees of freedom for the LR statistic}
+#' \item{AIC.rate1}{AIC for single rate model}
+#' \item{AICc.rate1}{AICc for single rate model}
 #' }
 #' @return If \code{pretty=TRUE}, prints a nice version of the list to screen. If \code{file} is specified the pretty output will be sent to file, not the console.
 #' @note Unlike phyloMean and likRatePhylo (that use treatment contrasts), the means reported here are the actual values

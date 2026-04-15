@@ -4,7 +4,9 @@
 \name{allopatric.data}
 \alias{allopatric.data}
 \title{Finch allopatric data}
-\format{An object of class \code{"data.frame"}.}
+\format{
+An object of class \code{"data.frame"}.
+}
 \usage{
 data(finches)
 }

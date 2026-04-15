@@ -4,7 +4,9 @@
 \name{anolis.tree}
 \alias{anolis.tree}
 \title{Anolis phylogeny}
-\format{An object of class \code{"phylo"}.}
+\format{
+An object of class \code{"phylo"}.
+}
 \usage{
 data(anolis.tree)
 }

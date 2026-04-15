@@ -30,7 +30,7 @@
 
 
 mcmc.plot <- function(mcmc.input, y.limit=NULL, x.limit=NULL, label.text=NULL, cex.axis=1, cex.labels=0.7, col.hist="green4", col.trace="navy") {
-	if(!class(mcmc.input) == "motmot.mcmc") stop("please supply object of class motmot.mcmc")
+	if (!inherits(mcmc.input, "motmot.mcmc")) stop("please supply object of class motmot.mcmc")
 	n.param <- ncol(mcmc.input$mcmc)
 	names.param <- names(mcmc.input[[1]])
 	

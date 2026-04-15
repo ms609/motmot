@@ -1,0 +1,7 @@
+^src/.*\\.o$
+^src/.*\\.dll$
+^src/symbols\\.rds$
+^.*\.Rproj$
+^\.Rproj\.user$
+^\.positai$
+^\.claude$

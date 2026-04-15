@@ -5,8 +5,6 @@
 #' @name motmot-package
 #' @aliases motmot
 #'
-#' @docType package
-#'
 #' @author Mark Puttick <marknputtick@gmail.com>.
 #' @author Gavin Thomas.
 #' @author Travis Ingram.
@@ -16,11 +14,8 @@
 #' @author Emmanuel Paradis.
 
 #' @keywords package
-
+#'
 #' @references Thomas GH, & Freckleton R. 2012. Body size diversification in Anolis: novel environments and island effects. MOTMOT: models of trait macroevolution on trees 3, 145-151.
 
-## usethis namespace: start
-#' @importFrom Rcpp sourceCpp
-#' @useDynLib motmot, .registration = TRUE
-## usethis namespace: end
+## NOTE: package-level namespace directives and native registration are declared in `R/_PACKAGE`.
 NULL

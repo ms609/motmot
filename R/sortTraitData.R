@@ -34,7 +34,7 @@ sortTraitData <- function (phy, y, data.name=NULL, log.trait = TRUE, pass.ultram
 			trait.data <- y
 		}
 
-    if (class(phy) == "multiPhylo") {
+    if (inherits(phy, "multiPhylo")) {
         tree <- phy
         phy <- phy[[1]]
         multi.phy <- TRUE

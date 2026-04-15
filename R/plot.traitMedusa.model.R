@@ -35,8 +35,8 @@
 
 plot.traitMedusa.model <- function(x, y = NULL, ..., reconType="rates", palette="hotspot.colors") {
   
-  if (class(x) != "traitMedusa.model")
-	  stop("Please sapply output from transformPhylo.ML with model = 'tm1' or model = 'tm2'.")
+  if (!inherits(x, "traitMedusa.model"))
+    stop("Please sapply output from transformPhylo.ML with model = 'tm1' or model = 'tm2'.")
 	
   phy <- x$original.phy
   traitMedusaObject <- x

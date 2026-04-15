@@ -93,9 +93,9 @@ ape2peth <- function(tree) {
 ## Convert ape to peth, or pass on peth tree, or return error if incorrect
 
 checktree <- function(phy) {
-    if(class(phy) == "phylo") {
+    if (inherits(phy, "phylo")) {
         phy = ape2peth(phy)
-    } else if(class(phy) != "pethtree") {
+    } else if (!inherits(phy, "pethtree")) {
         stop("Tree incorrectly formatted.")
     }
     phy
@@ -105,10 +105,11 @@ checktree <- function(phy) {
 # If matrix is NA then all elements are set to constant number n
 
 vectortime <- function(sympatric, degree, n.tips) {
-    if(all(is.na(sympatric)))
-    {
+    if(all(is.na(sympatric))) {
         sympatric.out = replicate(n.tips ^ 2, degree)
-    } else if(class(sympatric)=="matrix") {
+    } else if(is.matrix(sympatric)) {
+        sympatric.out = as.vector(sympatric)
+    } else {
         sympatric.out = as.vector(sympatric)
     }
     sympatric.out
@@ -132,7 +133,7 @@ symp_matrix <- function(tree, delay=0) {
     tree.check = checktree(tree)
     ntip <- length(tree.check$data_order)
     sympatry.out <- matrix(nrow=ntip, ncol=ntip, 0)
-    if(class(tree) == "phylo") rownames(s) <- colnames(s) <- tree$tip.label
+    if (inherits(tree, "phylo")) rownames(s) <- colnames(s) <- tree$tip.label
 
     # find ages (time from root) of tip lineages
     age <- 1:ntip
