@@ -30,9 +30,10 @@ Authors@R: c(
   )
 License: GPL (>= 2)
 URL: https://puttickbiology.wordpress.com/motmot/
+BugReports: https://github.com/ms609/motmot/issues
 LinkingTo: Rcpp
 Imports: Rcpp, coda, ks, mvtnorm, caper, methods
 Suggests: knitr, rmarkdown
-RoxygenNote: 7.3.3
 VignetteBuilder: knitr
 Encoding: UTF-8
+Config/roxygen2/version: 8.0.0

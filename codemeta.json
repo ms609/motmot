@@ -1,0 +1,213 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "identifier": "motmot",
+  "description": "Functions for fitting models of trait evolution on phylogenies for continuous traits. The majority of functions are described in Thomas and Freckleton (2012) <doi:10.1111/j.2041-210X.2011.00132.x> and allow tests of variation in the rates of trait evolution.",
+  "name": "motmot: Models of Trait Macroevolution on Trees",
+  "codeRepository": "https://puttickbiology.wordpress.com/motmot/",
+  "issueTracker": "https://github.com/ms609/motmot/issues",
+  "license": "https://spdx.org/licenses/GPL-2.0",
+  "version": "2.1.4",
+  "programmingLanguage": {
+    "@type": "ComputerLanguage",
+    "name": "R",
+    "url": "https://r-project.org"
+  },
+  "runtimePlatform": "R Under development (unstable) (2026-06-02 r90096 ucrt)",
+  "provider": {
+    "@id": "https://cran.r-project.org",
+    "@type": "Organization",
+    "name": "Comprehensive R Archive Network (CRAN)",
+    "url": "https://cran.r-project.org"
+  },
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Mark",
+      "familyName": "Puttick",
+      "email": "marknputtick@gmail.com",
+      "@id": "https://orcid.org/0000-0002-1011-3442"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Gavin",
+      "familyName": "Thomas"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Rob",
+      "familyName": "Freckleton"
+    }
+  ],
+  "contributor": [
+    {
+      "@type": "Person",
+      "givenName": "Magnus",
+      "familyName": "Clarke"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Travis",
+      "familyName": "Ingram"
+    },
+    {
+      "@type": "Person",
+      "givenName": "David",
+      "familyName": "Orme"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Emmanuel",
+      "familyName": "Paradis"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Martin R.",
+      "familyName": "Smith",
+      "email": "martin.smith@durham.ac.uk",
+      "@id": "https://orcid.org/0000-0001-5660-1727"
+    }
+  ],
+  "copyrightHolder": [
+    {
+      "@type": "Person",
+      "givenName": "Mark",
+      "familyName": "Puttick",
+      "email": "marknputtick@gmail.com",
+      "@id": "https://orcid.org/0000-0002-1011-3442"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Gavin",
+      "familyName": "Thomas"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Rob",
+      "familyName": "Freckleton"
+    }
+  ],
+  "maintainer": [
+    {
+      "@type": "Person",
+      "givenName": "Martin R.",
+      "familyName": "Smith",
+      "email": "martin.smith@durham.ac.uk",
+      "@id": "https://orcid.org/0000-0001-5660-1727"
+    }
+  ],
+  "softwareSuggestions": [
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "knitr",
+      "name": "knitr",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=knitr"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "rmarkdown",
+      "name": "rmarkdown",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=rmarkdown"
+    }
+  ],
+  "softwareRequirements": {
+    "1": {
+      "@type": "SoftwareApplication",
+      "identifier": "R",
+      "name": "R",
+      "version": ">= 2.10.0"
+    },
+    "2": {
+      "@type": "SoftwareApplication",
+      "identifier": "ape",
+      "name": "ape",
+      "version": ">= 3.0-7",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=ape"
+    },
+    "3": {
+      "@type": "SoftwareApplication",
+      "identifier": "Rcpp",
+      "name": "Rcpp",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=Rcpp"
+    },
+    "4": {
+      "@type": "SoftwareApplication",
+      "identifier": "coda",
+      "name": "coda",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=coda"
+    },
+    "5": {
+      "@type": "SoftwareApplication",
+      "identifier": "ks",
+      "name": "ks",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=ks"
+    },
+    "6": {
+      "@type": "SoftwareApplication",
+      "identifier": "mvtnorm",
+      "name": "mvtnorm",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=mvtnorm"
+    },
+    "7": {
+      "@type": "SoftwareApplication",
+      "identifier": "caper",
+      "name": "caper",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=caper"
+    },
+    "8": {
+      "@type": "SoftwareApplication",
+      "identifier": "methods",
+      "name": "methods"
+    },
+    "SystemRequirements": null
+  },
+  "fileSize": "1742.517KB"
+}

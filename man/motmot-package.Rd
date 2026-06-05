@@ -21,6 +21,7 @@ Thomas G. H., & Freckleton R. 2012.
 Useful links:
 \itemize{
   \item \url{https://puttickbiology.wordpress.com/motmot/}
+  \item Report bugs at \url{https://github.com/ms609/motmot/issues}
 }
 
 }
