@@ -1,12 +1,8 @@
 #include <stdlib.h> // for NULL
 #include <R_ext/Rdynload.h>
 
-/* FIXME: 
-   Check these declarations against the C/Fortran source code.
-*/
-
 /* .C calls */
-extern void pathsim(void *, void *, void *, void *, void *, void *, void *, void *, void *, void *, void *);
+extern void pathsim(int *, double *, double *, double *, double *, int *, double *, int *, double *, double *, double *);
 
 static const R_CMethodDef CEntries[] = {
     {"pathsim", (DL_FUNC) &pathsim, 11},
